@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmission — ASAHI Kinetic Interface</title>
+    <meta name="description" content="A glowing, animated contact console.">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/contact.css">
+</head>
+<body class="page-enter">
+
+    <canvas id="embers-canvas"></canvas>
+    <div id="cursor-glow"></div>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">
+            <span class="kanji">朝日</span>
+            <span class="latin">Asahi // Kinetic</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Archive</a></li>
+            <li><a href="profile.html">Dossier</a></li>
+            <li><a href="contact.html">Transmission</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <header class="page-header">
+        <span class="eyebrow">03 // Transmission Console</span>
+        <h1>Open a Channel</h1>
+        <p>Send a message through the signal tower. This console is a portfolio demo — nothing is transmitted anywhere.</p>
+    </header>
+
+    <section class="section" style="padding-top:0;">
+        <div class="signal-wave reveal">
+            <span style="height:40%; animation-delay:0s;"></span>
+            <span style="height:80%; animation-delay:0.1s;"></span>
+            <span style="height:55%; animation-delay:0.2s;"></span>
+            <span style="height:95%; animation-delay:0.3s;"></span>
+            <span style="height:60%; animation-delay:0.4s;"></span>
+            <span style="height:75%; animation-delay:0.5s;"></span>
+            <span style="height:35%; animation-delay:0.6s;"></span>
+            <span style="height:90%; animation-delay:0.7s;"></span>
+            <span style="height:50%; animation-delay:0.8s;"></span>
+            <span style="height:70%; animation-delay:0.9s;"></span>
+        </div>
+
+        <div class="transmission-grid">
+            <div class="card tx-card reveal">
+                <form id="transmission-form">
+                    <div class="field">
+                        <label for="tx-name">Callsign</label>
+                        <input type="text" id="tx-name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="field">
+                        <label for="tx-email">Return Frequency</label>
+                        <input type="email" id="tx-email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="tx-message">Message</label>
+                        <textarea id="tx-message" name="message" placeholder="Say something bright…" required></textarea>
+                    </div>
+                    <button type="submit" class="glow-btn">Send Transmission</button>
+                    <span id="form-status"></span>
+                </form>
+            </div>
+
+            <div class="card tx-card reveal reveal-delay-1">
+                <h3 style="margin-bottom:6px;">Direct Lines</h3>
+                <p style="color:var(--text-dim); font-size:0.8rem; margin-bottom:8px;">For real inquiries about this project, use the email below.</p>
+                <ul class="info-list">
+                    <li><span>Developer</span><span>MD Atiqul Islam (Atik)</span></li>
+                    <li><span>Email</span><a href="mailto:atik.cmttiu1001@gmail.com">atik.cmttiu1001@gmail.com</a></li>
+                    <li><span>Status</span><span>Available for freelance</span></li>
+                </ul>
+
+                <div class="socials-grid">
+                    <a href="mailto:atik.cmttiu1001@gmail.com" class="social-chip"><span class="dot"></span>Email</a>
+                    <a href="#" class="social-chip"><span class="dot"></span>GitHub</a>
+                    <a href="#" class="social-chip"><span class="dot"></span>LinkedIn</a>
+                    <a href="#" class="social-chip"><span class="dot"></span>Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span class="footer-brand">© 2026 Asahi // Kinetic Interface</span>
+        <div class="footer-socials">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Archive</a>
+            <a href="profile.html">Dossier</a>
+        </div>
+        <div class="dev-credit">
+            <span class="dev-name">MD Atiqul Islam (Atik)</span>
+            <a href="mailto:atik.cmttiu1001@gmail.com">atik.cmttiu1001@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>

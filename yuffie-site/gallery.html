@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive — ASAHI Kinetic Interface</title>
+    <meta name="description" content="A kinetic visual archive of tilting, glowing panels.">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/gallery.css">
+</head>
+<body class="page-enter">
+
+    <canvas id="embers-canvas"></canvas>
+    <div id="cursor-glow"></div>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">
+            <span class="kanji">朝日</span>
+            <span class="latin">Asahi // Kinetic</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Archive</a></li>
+            <li><a href="profile.html">Dossier</a></li>
+            <li><a href="contact.html">Transmission</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <header class="page-header">
+        <span class="eyebrow">01 // Visual Archive</span>
+        <h1>The Archive</h1>
+        <p>Every panel below is drawn live in CSS — no stock photography, just gradients, light, and motion tuned to the character's palette.</p>
+    </header>
+
+    <section class="section" style="padding-top:0;">
+        <div class="filter-bar">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="combat">Combat</button>
+            <button data-filter="lore">Lore</button>
+            <button data-filter="concept">Concept</button>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="art-tile wide reveal" data-tilt="6" data-category="combat">
+                <div class="art-bg bg-blaze"></div>
+                <span class="art-kanji">熾</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Combat</span>
+                    <div class="art-title">Overdrive Ignition</div>
+                    <div class="art-sub">Full-output blaze sequence</div>
+                </div>
+            </div>
+
+            <div class="art-tile reveal reveal-delay-1" data-tilt="6" data-category="lore">
+                <div class="art-bg bg-dusk"></div>
+                <span class="art-kanji">朝</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Lore</span>
+                    <div class="art-title">First Light</div>
+                    <div class="art-sub">Origins of the Asahi signal</div>
+                </div>
+            </div>
+
+            <div class="art-tile reveal reveal-delay-2" data-tilt="6" data-category="concept">
+                <div class="art-bg bg-void"></div>
+                <span class="art-kanji">無</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Concept</span>
+                    <div class="art-title">Nihility Study</div>
+                    <div class="art-sub">Background typography exploration</div>
+                </div>
+            </div>
+
+            <div class="art-tile reveal reveal-delay-3" data-tilt="6" data-category="combat">
+                <div class="art-bg bg-frost"></div>
+                <span class="art-kanji">凍</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Combat</span>
+                    <div class="art-title">Cold Read</div>
+                    <div class="art-sub">Defensive stance, frame 12</div>
+                </div>
+            </div>
+
+            <div class="art-tile reveal data-tilt" data-tilt="6" data-category="lore">
+                <div class="art-bg bg-ember"></div>
+                <span class="art-kanji">燈</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Lore</span>
+                    <div class="art-title">The Lantern Keeper</div>
+                    <div class="art-sub">Companion character sketch</div>
+                </div>
+            </div>
+
+            <div class="art-tile wide reveal reveal-delay-1" data-tilt="6" data-category="concept">
+                <div class="art-bg bg-bloom"></div>
+                <span class="art-kanji">華</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Concept</span>
+                    <div class="art-title">Bloom Protocol</div>
+                    <div class="art-sub">Petal-system color exploration for the kinetic card</div>
+                </div>
+            </div>
+
+            <div class="art-tile reveal reveal-delay-2" data-tilt="6" data-category="combat">
+                <div class="art-bg bg-bloom"></div>
+                <span class="art-kanji">刃</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Combat</span>
+                    <div class="art-title">Edge Case</div>
+                    <div class="art-sub">Close-quarters engagement</div>
+                </div>
+            </div>
+
+            <div class="art-tile reveal reveal-delay-3" data-tilt="6" data-category="lore">
+                <div class="art-bg bg-frost"></div>
+                <span class="art-kanji">静</span>
+                <div class="art-scan"></div>
+                <div class="art-info">
+                    <span class="art-tag">Lore</span>
+                    <div class="art-title">Stillness Between Signals</div>
+                    <div class="art-sub">Quiet-moment character study</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span class="footer-brand">© 2026 Asahi // Kinetic Interface</span>
+        <div class="footer-socials">
+            <a href="index.html">Home</a>
+            <a href="profile.html">Dossier</a>
+            <a href="contact.html">Transmission</a>
+        </div>
+        <div class="dev-credit">
+            <span class="dev-name">MD Atiqul Islam (Atik)</span>
+            <a href="mailto:atik.cmttiu1001@gmail.com">atik.cmttiu1001@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>

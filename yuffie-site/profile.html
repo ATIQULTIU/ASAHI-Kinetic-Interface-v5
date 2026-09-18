@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier — ASAHI Kinetic Interface</title>
+    <meta name="description" content="Character dossier with animated stats, rings, and timeline.">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;900&family=Syncopate:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+    <link rel="stylesheet" href="assets/profile.css">
+</head>
+<body class="page-enter">
+
+    <canvas id="embers-canvas"></canvas>
+    <div id="cursor-glow"></div>
+
+    <nav class="site-nav">
+        <a href="index.html" class="nav-brand">
+            <span class="kanji">朝日</span>
+            <span class="latin">Asahi // Kinetic</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Archive</a></li>
+            <li><a href="profile.html">Dossier</a></li>
+            <li><a href="contact.html">Transmission</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <header class="page-header">
+        <span class="eyebrow">02 // Character Dossier</span>
+        <h1>朝日 — Asahi</h1>
+        <p>Codename "Chixia." Overdrive-class field unit. Every stat below animates in as it enters view.</p>
+    </header>
+
+    <section class="section" style="padding-top:0;">
+        <div class="dossier-grid">
+
+            <div class="card dossier-card reveal">
+                <div class="bio-tag-row">
+                    <span class="bio-tag">Overdrive</span>
+                    <span class="bio-tag">Fire Affinity</span>
+                    <span class="bio-tag">Frontline</span>
+                </div>
+                <p class="bio-text" data-typewriter>Born under the first light of the eastern signal towers, Asahi answers every distress call with the same line: fret not, the hero has arrived. Loud, blazing, and impossible to ignore — she treats every battle like a stage and every stage like a promise she intends to keep.</p>
+                <p class="bio-quote">"心配ご無用！正義の味方、熾霞のお出ましだ！" — Fret not! The hero Chixia has arrived!</p>
+
+                <div class="counter-row">
+                    <div class="counter-box reveal">
+                        <div class="big-num" data-count="142" data-suffix="">142</div>
+                        <div class="label">Missions</div>
+                    </div>
+                    <div class="counter-box reveal reveal-delay-1">
+                        <div class="big-num" data-count="98" data-suffix="%">98%</div>
+                        <div class="label">Sync Rate</div>
+                    </div>
+                    <div class="counter-box reveal reveal-delay-2">
+                        <div class="big-num" data-count="7" data-suffix="">7</div>
+                        <div class="label">Overdrive Lv.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card dossier-card reveal reveal-delay-1">
+                <div class="stat-row">
+                    <div class="stat-label"><span>Offense</span><span>92</span></div>
+                    <div class="stat-track"><div class="stat-fill" data-fill="92"></div></div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label"><span>Mobility</span><span>78</span></div>
+                    <div class="stat-track"><div class="stat-fill" data-fill="78"></div></div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label"><span>Resilience</span><span>65</span></div>
+                    <div class="stat-track"><div class="stat-fill" data-fill="65"></div></div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-label"><span>Signal Range</span><span>83</span></div>
+                    <div class="stat-track"><div class="stat-fill" data-fill="83"></div></div>
+                </div>
+
+                <div class="ring-row">
+                    <div class="stat-ring" data-fill="90">
+                        <div class="ring-inner"><span class="ring-val">90</span><span class="ring-name">Power</span></div>
+                    </div>
+                    <div class="stat-ring" data-fill="74">
+                        <div class="ring-inner"><span class="ring-val">74</span><span class="ring-name">Tech</span></div>
+                    </div>
+                    <div class="stat-ring" data-fill="61">
+                        <div class="ring-inner"><span class="ring-val">61</span><span class="ring-name">Defense</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="t-date">Signal 01</div>
+                <h4>First Activation</h4>
+                <p>Asahi's kinetic interface goes live for the first time, broadcasting on the Overdrive frequency.</p>
+            </div>
+            <div class="timeline-item reveal reveal-delay-1">
+                <div class="t-date">Signal 02</div>
+                <h4>Blazing Bright Arc</h4>
+                <p>A string of frontline engagements earns the callsign "Overdrive," later folded into her title card.</p>
+            </div>
+            <div class="timeline-item reveal reveal-delay-2">
+                <div class="t-date">Signal 03</div>
+                <h4>Kinetic Interface v5</h4>
+                <p>The showcase card is rebuilt with a full multi-page archive, dossier, and transmission console.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <span class="footer-brand">© 2026 Asahi // Kinetic Interface</span>
+        <div class="footer-socials">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Archive</a>
+            <a href="contact.html">Transmission</a>
+        </div>
+        <div class="dev-credit">
+            <span class="dev-name">MD Atiqul Islam (Atik)</span>
+            <a href="mailto:atik.cmttiu1001@gmail.com">atik.cmttiu1001@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>
